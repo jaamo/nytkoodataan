@@ -1,0 +1,109 @@
+/* Colors */
+
+.palette {
+  color: #7ba391;
+  color: #363637;
+  color: #a8778e;
+  color: #d6755e;
+  color: #decc7b;
+}
+
+:root {
+  --mainColor: #d6755e;
+}
+
+body {
+  font-family: Tahoma;
+}
+
+a {
+  background: linear-gradient(
+    to bottom,
+    var(--mainColor) 0%,
+    var(--mainColor) 100%
+  );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 1px;
+  color: #d6755e;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+a:hover {
+  background-size: 4px 50px;
+  color: white;
+}
+
+.hero {
+  border-bottom: 1px solid #dddddd;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.logo {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+h1 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New";
+}
+
+.intro {
+  padding-top: 9rem;
+  padding-bottom: 5rem;
+}
+
+h2 {
+  text-shadow: 0.1rem 0.1rem 0rem rgba(0, 0, 0, 0.2);
+}
+
+p {
+  color: rgb(140, 140, 140);
+}
+
+.lessons {
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.lesson {
+  width: 33%;
+  padding-bottom: 5rem;
+}
+
+h4::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 2rem;
+  background-color: #d6755e;
+  left: 0;
+  bottom: 50%;
+}
+
+h4 {
+  margin: 1rem 0 0 0;
+  padding: 0;
+  font-size: 1rem;
+  position: relative;
+  padding-left: 3rem;
+  color: rgb(140, 140, 140);
+  font-weight: normal;
+}
+
+h3 {
+  margin: 0.3rem 0 0 0;
+  padding: 0 0 0 3rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
