@@ -10,6 +10,9 @@
 
 :root {
   --mainColor: #d6755e;
+
+  --bg-color: #333;
+  --sig-color: #fff;
 }
 
 body {
@@ -78,7 +81,12 @@ p {
 
 .lesson {
   width: 33%;
-  padding-bottom: 5rem;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.lesson:hover {
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
 }
 
 h4::after {
@@ -106,4 +114,33 @@ h3 {
   padding: 0 0 0 3rem;
   font-size: 1.4rem;
   text-transform: uppercase;
+}
+
+.lesson-cover {
+  width: 100%;
+  height: 15rem;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-button {
+  background: #db4437;
+  width: 7rem;
+  height: 5rem;
+  border-radius: 40px/100px;
+  box-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-button-arrow {
+  width: 0;
+  height: 0;
+  border-top: 1rem solid transparent;
+  border-left: 1.5rem solid #f3f1e7;
+  border-bottom: 1rem solid transparent;
 }
