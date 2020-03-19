@@ -63,6 +63,11 @@ h1 {
 .intro {
   padding-top: 9rem;
   padding-bottom: 5rem;
+  width: 60%;
+}
+
+.readmore-content {
+  display: none;
 }
 
 h2 {
@@ -87,6 +92,14 @@ p {
 
 .lesson:hover {
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+.lesson.lesson-disabled .lesson-cover {
+  opacity: 0.2;
+}
+
+.lesson.lesson-disabled:hover {
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0);
 }
 
 h4::after {
@@ -143,4 +156,8 @@ h3 {
   border-top: 1rem solid transparent;
   border-left: 1.5rem solid #f3f1e7;
   border-bottom: 1rem solid transparent;
+}
+
+.lesson-disabled .play-button {
+  background: #363637;
 }
